@@ -46,7 +46,7 @@ section#login{
 
 div#imagem{
     display: block;
-    background: var(--lilas) url(../projeto-login/imagens/porta.jpg) no-repeat;
+    background: var(--lilas) url(../imagens/porta.jpg) no-repeat;
     background-size: cover;
     background-position: left center;
     height: 200px;
