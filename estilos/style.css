@@ -9,12 +9,14 @@ Paleta de cores
 :root {
     --verde: #49a09d;
     --lilas: #5f2c82;
+    --verde-escuro: #2d6462;
+    --verde-claro: #6cd3cf;
 }
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0;
-    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -38,7 +40,7 @@ section#login{
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     overflow: hidden; /* tudo que estiver fora da borda fica escondido */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.450);
@@ -69,3 +71,60 @@ div#formulario > h1{
 div#formulario > p{
     font-size: 0.8em;
 }
+
+form > div.campo{
+    background-color: var(--lilas);
+    /* border: 2px solid #5f2c82; */
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /*vira "maozinha" quando o ouse está em cim*/
+}
+
+form > input[type=submit]:hover{
+    background-color: var(--verde-escuro);
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: var(--verde-escuro);
+    border: 1px solid var(--verde);
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer; /*vira "maozinha" quando o ouse está em cim*/
+}
+
+form > a.botao:hover{
+    background-color: var(--verde-claro);
+}
+
+form > a.botao > i{
+    font-size: 0.8em;
+}
+
+    
+    
