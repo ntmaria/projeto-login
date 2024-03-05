@@ -36,14 +36,12 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    
     background-color: white;
     width: 250px;
     height: 515px;
     border-radius: 20px;
     overflow: hidden; /* tudo que estiver fora da borda fica escondido */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.450);
-    
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
     transform: translate(-50%, -50%);
@@ -101,7 +99,7 @@ div.campo > input{
     height: 100%;
     border: 0;
     border-radius: 8px;
-    padding: 1px;
+    padding: 1px 1px 1px 10px;
     transform: translateY(-12px); /*sempre que tiver um transformfazer na última linha do seletor*/
 }
 
